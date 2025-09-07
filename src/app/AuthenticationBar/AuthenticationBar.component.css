@@ -1,0 +1,47 @@
+.authenticator-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #2e4057;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #2e4057;
+  gap: 10rem;
+}
+
+button {
+  background-color: #2e4057;
+  font-family: "Carlito";
+  color: #ffe4c4;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border: none;
+}
+
+button:hover {
+  color: #2e4057;
+  background-color: #ffe4c4;
+  cursor: pointer;
+}
+
+.icons {
+  background-color: #2e4057;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.icons i {
+  background-color: #2e4057;
+  color: #ffe4c4;
+}
