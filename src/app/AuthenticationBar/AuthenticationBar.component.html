@@ -1,10 +1,84 @@
-<div class="authenticator-bar">
-    <div class="buttons"> 
-        <button>SIGN UP</button>
-        <button>LOGIN</button>
+<div class="authenticator-bar large-screens">
+  <div class="buttons">
+    <button>SIGN UP</button>
+    <button>LOGIN</button>
+  </div>
+  <div class="icons">
+    <span id="icons-hover"><i class="fa-brands fa-instagram"></i></span>
+    <span id="icons-hover"><i class="fa-regular fa-envelope"></i></span>
+  </div>
+</div>
+
+<div class="authenticator-bar small-screens" [class.show]="menuOpen">
+  <div class="buttons">
+    <button>SIGN UP</button>
+    <button>LOGIN</button>
+    <div class="links">
+      <button id="small"><i class="fa-solid fa-house"></i>HOME</button>
+      <button id="small">
+        <i class="fa-regular fa-address-card"></i>ABOUT
+      </button>
+      <button id="small"><i class="fa-solid fa-phone"></i>CONTACT</button>
     </div>
-    <div class="icons">
-        <button><i class="fa-brands fa-instagram"></i></button>
-        <button><i class="fa-regular fa-envelope"></i></button>
-    </div>
+  </div>
+  <div class="icons">
+    <button id="icons-hover">
+      <i class="fa-brands fa-instagram"> <a routerLink="/insta"></a> </i>
+    </button>
+    <button id="icons-hover">
+      <i class="fa-regular fa-envelope"> <a routerLink="/mail"></a> </i>
+    </button>
+  </div>
+</div>
+
+<!-- hamburger -->
+
+<div
+  class="container hamburger"
+  (click)="toggleMenu()"
+  [ngClass]="{ active: menuOpen }"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="70"
+    height="70"
+    viewBox="0 0 200 200"
+  >
+    <g stroke-width="6.5" stroke-linecap="round">
+      <path
+        d="M72 82.286h28.75"
+        fill="#009100"
+        fill-rule="evenodd"
+        stroke="#2e4057"
+      />
+      <path
+        d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+        fill="none"
+        stroke="#2e4057"
+      />
+      <path
+        d="M72 125.143h28.75"
+        fill="#009100"
+        fill-rule="evenodd"
+        stroke="#2e4057"
+      />
+      <path
+        d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+        fill="none"
+        stroke="#2e4057"
+      />
+      <path
+        d="M100.75 82.286h28.75"
+        fill="#009100"
+        fill-rule="evenodd"
+        stroke="#2e4057"
+      />
+      <path
+        d="M100.75 125.143h28.75"
+        fill="#009100"
+        fill-rule="evenodd"
+        stroke="#2e4057"
+      />
+    </g>
+  </svg>
 </div>
