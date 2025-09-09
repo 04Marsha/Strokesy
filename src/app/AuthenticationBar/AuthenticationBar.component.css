@@ -102,13 +102,18 @@ i {
 }
 
 #small {
+  font-family: "Carlito";
+  letter-spacing: 0.2rem;
   font-size: 1rem;
   margin-top: 20px;
+  background-color: #2e4057;
+  color: #ffe4c4;
+  text-decoration: none;
 }
 
 #small>i {
-  margin-right: 10px;
   font-size: 1rem;
+  margin-right: 10px;
 }
 
 .small-screens .icons {
