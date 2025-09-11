@@ -112,7 +112,7 @@ i {
   text-decoration: none;
 }
 
-#small>i {
+#small > i {
   font-size: 1rem;
   margin-right: 10px;
 }
