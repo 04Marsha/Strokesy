@@ -69,7 +69,7 @@ span {
 .add {
   width: 100%;
   height: 1000px;
-  background-image: url("/assets/templates/add.png");
+  background-image: url("/assets/add.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
