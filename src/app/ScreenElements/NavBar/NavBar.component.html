@@ -1,0 +1,19 @@
+<div class="navbar">
+  <span id="nav-ele" routerLink="/">HOME</span>
+  <span id="nav-ele" routerLink="/about">ABOUT</span>
+  <span id="nav-ele" routerLink="/contact">CONTACT</span>
+</div>
+
+<div class="banner">
+  <div class="banner-wrapper">
+    <div class="banner-text reverse">
+      <span *ngFor="let _ of copies">{{ text }}</span>
+    </div>
+  </div>
+</div>
+
+<div class="add">
+  <div class="text1">Turn Blank Walls Into Statements</div>
+  <div class="text2">Strokesy brings colors that speak louder than words..</div>
+  <button class="shopNow">SHOP NOW</button>
+</div>

@@ -1,0 +1,345 @@
+.page {
+  position: relative;
+  background: #f8f9fe;
+  min-height: 100vh;
+}
+
+.decorative-shapes {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.shape-1 {
+  width: 120px;
+  height: 120px;
+  background: #ffcc66;
+  border-radius: 50%;
+  top: 10%;
+  right: 8%;
+}
+
+.shape-2 {
+  width: 80px;
+  height: 80px;
+  background: #99f0c8;
+  border-radius: 20px;
+  bottom: 15%;
+  left: 5%;
+  transform: rotate(45deg);
+}
+
+.shape-3 {
+  width: 140px;
+  height: 140px;
+  background: #c9a3ff;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  top: 50%;
+  left: 3%;
+}
+
+.shape-4 {
+  width: 90px;
+  height: 90px;
+  background: #88c8ff;
+  border-radius: 50%;
+  top: 70%;
+  right: 10%;
+}
+
+.shape-5 {
+  width: 100px;
+  height: 100px;
+  background: #ff9ec1;
+  border-radius: 50%;
+  top: 25%;
+  left: 12%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h1 {
+  font-family: "Luckiest Guy";
+  font-size: 72px;
+  color: #f28fad;
+  letter-spacing: 8px;
+  margin-bottom: 15px;
+}
+
+.header .subtitle {
+  font-family: "Lobster Two";
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #395f79;
+  font-weight: 600;
+}
+
+.content {
+  background: #fff5f9;
+  padding: 50px;
+  border-radius: 20px;
+  border: 3px solid #f28fad;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  line-height: 1.4;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-family: "Lobster Two";
+  font-size: 36px;
+  color: #f28fad;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: "Lobster Two";
+  font-size: 34px;
+  font-weight: 600;
+  color: #395f79;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  font-weight: 700;
+}
+
+.section p {
+  font-family: "Carlito";
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #395f79;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+  font-family: "Carlito";
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.section ul li {
+  font-family: "Carlito";
+  font-size: 19px;
+  color: #395f79;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.section ul li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #f28fad;
+  font-size: 20px;
+}
+
+.divider {
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    #ff9ec1,
+    #ffcc66,
+    #99f0c8,
+    #88c8ff,
+    #c9a3ff
+  );
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.closing {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px dashed #f28fad;
+}
+
+.closing p {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #395f79;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+button {
+  width: 40%;
+  max-width: 150px;
+  padding: 14px;
+  background: #f28fad;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: "Carlito";
+}
+
+button:hover {
+  background: #ff85b3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 158, 193, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .header h1 {
+    font-size: 52px;
+    letter-spacing: 2px;
+  }
+
+  button {
+    width: 20%;
+    font-size: 18px;
+  }
+
+  .header .subtitle {
+    font-size: 18px;
+  }
+
+  .content {
+    padding: 35px 25px;
+  }
+
+  .section h2 {
+    font-size: 30px;
+  }
+
+  .section h3 {
+    font-size: 22px;
+  }
+
+  .section p,
+  .section ul li {
+    font-size: 17px;
+  }
+
+  .closing p {
+    font-size: 18px;
+  }
+
+  .shape-1,
+  .shape-4 {
+    display: none;
+  }
+
+  .shape-2,
+  .shape-3,
+  .shape-5 {
+    opacity: 0.15;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .header h1 {
+    font-size: 38px;
+    letter-spacing: 1px;
+  }
+
+  .header .subtitle {
+    font-size: 16px;
+  }
+
+  .content {
+    padding: 25px 20px;
+    border-width: 2px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+
+  .section h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .section h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .section p,
+  .section ul li {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .section ul li {
+    padding-left: 25px;
+  }
+
+  .closing {
+    margin-top: 30px;
+    padding-top: 25px;
+  }
+
+  .closing p {
+    font-size: 17px;
+  }
+
+  .decorative-shapes {
+    display: none;
+  }
+
+  button {
+    width: 30%;
+    max-width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+}

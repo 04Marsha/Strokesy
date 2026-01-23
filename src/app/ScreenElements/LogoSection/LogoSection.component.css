@@ -1,78 +1,12 @@
-/* .logo-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 40px 0;
+body {
+  overflow: hidden;
 }
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-}
-
-.initial {
-  color: #f28fad;
-  font-size: 6rem;
-  font-family: "Carattere";
-}
-
-.all {
-  font-family: "Bagel Fat One";
-  font-size: 3.5rem;
-}
-
-.t {
-  color: #ffd97d;
-}
-.r {
-  color: #9ee493;
-}
-.o {
-  color: #8ec0e4;
-}
-.k {
-  color: #f5a5c8;
-}
-.e {
-  color: #d6cdea;
-}
-.s {
-  color: #ffc9de;
-}
-.y {
-  color: #ffe599;
-}
-
-.name {
-  font-family: "Carlito";
-  letter-spacing: 0.2rem;
-  color: #395f79;
-  font-size: 1.1rem;
-}
-
-@media screen and (max-width: 700px) {
-  .logo-container {
-    padding: 5px;
-  }
-  .initial {
-    font-size: 4rem;
-  }
-
-  .all {
-    font-size: 3rem;
-  }
-
-  .name {
-    font-size: 0.9rem;
-  }
-} */
 
 .logo-container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 .logo {
@@ -98,7 +32,6 @@
   position: relative;
   display: inline-block;
 }
-
 
 .t {
   color: #ffd97d;

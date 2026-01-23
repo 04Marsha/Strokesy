@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class NavBarComponent {
   text = 'MANDALA || ACRYLICS || WATERCOLORS || PENCIL SKETCHES || CHARCOAL || ';
-  copies = Array(2).fill(0);
+  copies = Array(4).fill(0);
 }

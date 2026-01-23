@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="heading">
+    <img src="/assets/s-logo.png" />
+    <h2>FEW GLIMPSES</h2>
+  </div>
+  <div class="image-container">
+    <img src="/assets/images/mandala.jpeg" alt="Mandala" />
+    <img src="/assets/images/mandala-colored.jpeg" alt="Colour" />
+    <img src="/assets/images/sketch.jpeg" alt="Sketch" />
+  </div>
+</div>
+
+<!-- Mobile Carousel View -->
+<div class="carousel-container">
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev" (click)="changeSlide(-1)">❮</button>
+
+    <div class="carousel-slide active">
+      <img src="/assets/images/mandala.jpeg" alt="Mandala artwork" />
+    </div>
+    <div class="carousel-slide">
+      <img src="/assets/images/mandala-colored.jpeg" alt="Colour" />
+    </div>
+    <div class="carousel-slide">
+      <img src="/assets/images/sketch.jpeg" alt="Sketch" />
+    </div>
+
+    <button class="carousel-btn next" (click)="changeSlide(1)">❯</button>
+  </div>
+</div>
+
+<div class="explore-section">
+  <h1>EXPL</h1>
+  <img id="bg" class="mg" src="/assets/mg.png" />
+  <h1>RE</h1>
+  <img id="bg" class="arrow" src="/assets/arrow.png" />
+</div>

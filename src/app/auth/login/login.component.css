@@ -1,0 +1,413 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.decorative-shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.3;
+}
+
+.shape-1 {
+  width: 80px;
+  height: 80px;
+  background: #ffcc66;
+  border-radius: 50%;
+  top: 15%;
+  right: 10%;
+}
+
+.shape-2 {
+  width: 60px;
+  height: 60px;
+  background: #99f0c8;
+  border-radius: 20px;
+  bottom: 20%;
+  left: 8%;
+  transform: rotate(45deg);
+}
+
+.shape-3 {
+  width: 100px;
+  height: 100px;
+  background: #c9a3ff;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  top: 40%;
+  left: 5%;
+}
+
+.shape-4 {
+  width: 70px;
+  height: 70px;
+  background: #88c8ff;
+  border-radius: 50%;
+  top: 60%;
+  right: 15%;
+}
+
+.form-container {
+  background: #fff5f9;
+  padding: 40px;
+  border-radius: 20px;
+  border: 3px solid #f28fad;
+  background-clip: padding-box;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  font-family: "Luckiest Guy";
+  letter-spacing: 6px;
+  text-align: center;
+  color: #f28fad;
+  margin-bottom: 30px;
+  font-size: 46px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #395f79;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: "Carlito";
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 95%;
+  padding: 12px 16px;
+  border: 2px solid #395f79;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  background: #fafbff;
+  color: #333333;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: #88c8ff;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(136, 200, 255, 0.15);
+}
+
+.captcha {
+  background: linear-gradient(135deg, #fff5f9 0%, #f0f8ff 100%);
+  padding: 16px;
+  border-radius: 12px;
+  border: 2px dashed #395f79;
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+button {
+  width: 40%;
+  max-width: 200px;
+  padding: 14px;
+  background: #f28fad;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: "Carlito";
+}
+
+button:hover {
+  background: #ff85b3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 158, 193, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.footer-text {
+  font-family: "Carlito";
+  text-align: center;
+  margin-top: 20px;
+  color: #888888;
+  font-size: 16px;
+}
+
+.footer-text a {
+  color: #f28fad;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    padding: 15px;
+  }
+
+  .form-container {
+    padding: 30px 25px;
+    max-width: 500px;
+  }
+
+  h2 {
+    font-size: 36px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+
+  .buttons {
+    gap: 20px;
+  }
+
+  button {
+    width: 45%;
+    font-size: 15px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+  }
+
+  .footer-text a {
+    font-size: 16px;
+  }
+
+  .shape-1 {
+    width: 60px;
+    height: 60px;
+    right: 5%;
+  }
+
+  .shape-2 {
+    width: 50px;
+    height: 50px;
+    left: 5%;
+  }
+
+  .shape-3 {
+    width: 80px;
+    height: 80px;
+    left: 3%;
+  }
+
+  .shape-4 {
+    width: 55px;
+    height: 55px;
+    right: 8%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 25px 20px;
+    border-radius: 16px;
+    border-width: 2px;
+  }
+
+  h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    font-size: 15px;
+    padding: 10px 12px;
+    border-radius: 10px;
+  }
+
+  .captcha {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .footer-text a {
+    font-size: 15px;
+  }
+
+  .shape-1,
+  .shape-4 {
+    display: none;
+  }
+
+  .shape-2 {
+    width: 40px;
+    height: 40px;
+    bottom: 10%;
+    left: 5%;
+  }
+
+  .shape-3 {
+    width: 60px;
+    height: 60px;
+    top: 5%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .form-container {
+    padding: 20px 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    font-size: 14px;
+    padding: 9px 10px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 11px;
+  }
+
+  .footer-text {
+    font-size: 13px;
+  }
+
+  .footer-text a {
+    font-size: 14px;
+  }
+
+  .shape-2,
+  .shape-3 {
+    opacity: 0.2;
+  }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .page {
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 20px;
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    padding: 8px 12px;
+  }
+
+  .captcha {
+    padding: 12px;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+  .footer-text {
+    margin-top: 12px;
+  }
+
+  .decorative-shapes {
+    display: none;
+  }
+}

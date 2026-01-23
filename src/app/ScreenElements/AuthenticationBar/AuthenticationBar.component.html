@@ -1,7 +1,7 @@
 <div class="authenticator-bar large-screens">
   <div class="buttons">
-    <button>SIGN UP</button>
-    <button>LOGIN</button>
+    <button routerLink="/auth/signup">SIGN UP</button>
+    <button routerLink="/auth/login" >LOGIN</button>
   </div>
   <div class="icons">
     <span id="icons-hover"><i class="fa-brands fa-instagram"></i></span>
@@ -11,8 +11,8 @@
 
 <div class="authenticator-bar small-screens" [class.show]="menuOpen">
   <div class="buttons">
-    <button>SIGN UP</button>
-    <button>LOGIN</button>
+    <button routerLink="/auth/signup" >SIGN UP</button>
+    <button routerLink="/auth/login" >LOGIN</button>
     <div class="links">
       <a href="" id="small"> <i class="fa-solid fa-house"></i> HOME </a>
       <a href="" id="small">
